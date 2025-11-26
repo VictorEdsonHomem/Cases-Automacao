@@ -1,0 +1,17 @@
+source "http://rubygems.org"
+
+gem "cucumber"
+gem "capybara"
+gem "rspec"
+gem 'selenium-webdriver', '~> 4.0'
+gem "webdrivers"
+gem "capybara-selenium"
+gem "chromedriver-helper"
+gem "pry"
+gem "faker"
+gem "rubocop-faker"
+gem "allure-cucumber"
+gem "cpf_faker"
+gem "timeout"
+gem "roo"
+gem "capybara-ng"

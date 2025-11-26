@@ -1,0 +1,12 @@
+default: -p bdd -p normal -p ambiente_tst -p html
+bdd: --format pretty --publish-quiet
+html: --format html --publish-quiet --out=results/cucumber-result.html
+json: --format json --publish-quiet --out=results/cucumber.json
+dot: --format progress --publish-quiet
+
+headless: HEADLESS=sem_interface
+normal: HEADLESS=com_interface
+
+ambiente_hom: ENVIRONMENT_TYPE=teste
+
+allure: --format AllureCucumber::CucumberFormatter --publish-quiet --out=results/allure-results
