@@ -1,0 +1,91 @@
+{
+  "data_asset_type": null,
+  "expectation_suite_name": "testeGx",
+  "expectations": [
+    {
+      "expectation_type": "expect_column_value_lengths_to_equal",
+      "kwargs": {
+        "column": "Year_of_Release",
+        "value": 4
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_match_regex_list",
+      "kwargs": {
+        "column": "Platform",
+        "match_on": "any",
+        "regex_list": [
+          "Wii",
+          "SNES",
+          "NES",
+          "X360",
+          "PS2",
+          "PS3",
+          "DS",
+          "GB",
+          "PS4",
+          "N64",
+          "PS",
+          "GBA",
+          "PC",
+          "XOne",
+          "GC",
+          "2600",
+          "GEN",
+          "XB",
+          "SCD",
+          "SAT",
+          "WS",
+          "DC",
+          "3DO",
+          "NG",
+          "TG16",
+          "GG"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "NA_Sales",
+        "max_value": 60,
+        "min_value": 0
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_of_type",
+      "kwargs": {
+        "column": "NA_Sales",
+        "type_": "float64"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "Critic_Score",
+        "mostly": 0.5
+      },
+      "meta": {}
+    }
+  ],
+  "ge_cloud_id": null,
+  "meta": {
+    "citations": [
+      {
+        "batch_request": {
+          "data_asset_name": "Video_Games_Sales_as_at_22_Dec_2016.csv",
+          "data_connector_name": "default_inferred_data_connector_name",
+          "datasource_name": "data__dir",
+          "limit": 1000
+        },
+        "citation_date": "2024-08-28T18:19:43.338541Z",
+        "comment": "Created suite added via CLI"
+      }
+    ],
+    "great_expectations_version": "0.18.19"
+  }
+}

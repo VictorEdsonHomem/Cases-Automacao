@@ -1,0 +1,79 @@
+{
+  "data_asset_type": null,
+  "expectation_suite_name": "testeGxData",
+  "expectations": [
+    {
+      "expectation_type": "expect_column_value_lengths_to_equal",
+      "kwargs": {
+        "column": "Year_of_Release",
+        "value": 6
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_match_regex_list",
+      "kwargs": {
+        "column": "Platform",
+        "match_on": "any",
+        "regex_list": [
+          "Wii",
+          "SNES",
+          "NES",
+          "X360",
+          "PS2",
+          "PS3",
+          "DS",
+          "GB",
+          "PS4",
+          "N64",
+          "PS",
+          "GBA",
+          "PC",
+          "XOne",
+          "GC",
+          "2600",
+          "GEN",
+          "XB",
+          "SCD",
+          "SAT",
+          "WS",
+          "DC",
+          "3DO",
+          "NG",
+          "TG16",
+          "GG"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "NA_Sales",
+        "max_value": 60,
+        "min_value": 0
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_of_type",
+      "kwargs": {
+        "column": "NA_Sales",
+        "type_": "float64"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "Critic_Score",
+        "mostly": 0.5
+      },
+      "meta": {}
+    }
+  ],
+  "ge_cloud_id": null,
+  "meta": {
+    "great_expectations_version": "0.18.19"
+  }
+}
